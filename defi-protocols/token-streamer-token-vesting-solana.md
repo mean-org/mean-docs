@@ -89,7 +89,7 @@ Employee Restricted Stock Unit benefit plans are commonly seen in tech companies
 
 #### **IPOs, ICOs, IEOs, etc.**
 
-Fundraising for a company or a project. Founders can give investors peace of mind proving they will not run away with the money unless they meet their milestones.&#x20;
+Fundraising for a company or a project. Founders can give investors peace of mind, proving they will not run away with the money unless they meet their milestones.&#x20;
 
 ![](https://lh6.googleusercontent.com/O4H7D15PbLa6615c1KYE5K0cHHrSvD9Lv1uTEHXfKTiBWeV53wz5JiNPVdLGvbIFoNwW55sH8t\_w\_EyCslEcDukQXDNFH6oJACSRy0ov\_Uua3TZorqmdMEJGBXMtd3bWtIgdIbJq=s0)
 
@@ -135,11 +135,11 @@ Distributions to heirs over time to guarantee continuous access to the funds pre
 
 There are two types of Token Streaming Accounts: **Open** or **Locked**.
 
-With an **Open Streaming Account**, you can create token streams that run indefinitely (no end date). When the treasury runs out of money, all streams stop running until it gets replenished. After replenishing the account, all paused payment streams can resume their operation.
+With an **Open Streaming Account**, you can create token streams that run indefinitely (no end date). When the streaming account runs out of tokens, all streams stop running until it gets replenished. After replenishing the account, all paused payment streams can resume their operation.
 
 With a **Locked Streaming Account**, you can create token streams that act like a vesting contract for reserved allocations, like the ones needed for investors. These payment streams usually have a fixed end date and may or may not guarantee funds through Reserved Allocations.
 
-Reserving an allocation from a **Locked Streaming Account** into a specific token stream means the beneficiary immediately becomes the OWNER of the allocation. The owner is simply locked from accessing these funds as specified by the rate and frequency of the money stream. This is useful for investors or any pre-paid contracts since the beneficiary has already paid for their tokens, and the intent is to delay their distribution.
+Reserving an allocation from a **Locked Streaming Account** into a specific token stream means the beneficiary immediately becomes the OWNER of the allocation. However, the owner-beneficiary is locked from accessing these funds as specified by the rate and frequency of the token stream. This is useful for investors or any pre-paid contracts since the beneficiary has already paid for their tokens, and the intent is to delay their distribution.
 
 This stands in contrast with **Open Streaming Accounts**, like those for Payroll, where work needs to be completed to EARN that allocation. The beneficiary is not the OWNER of their allocated tokens until they vest in the payment stream.
 
@@ -152,24 +152,24 @@ The basic premise of a token streaming smart contract is that once it gets execu
 In order to stream tokens from A→B at a specific rate/flow over time, the following participants are defined.
 
 1. **Token Streaming Program (TSP)**: A smart contract or program deployed to a permissionless blockchain that uses this protocol as a reference implementation.&#x20;
-2. **Streaming Account**: An account (wallet address) used to escrow the money being streamed. This account is under the sole custody/ownership of the TSP smart contract.
+2. **Streaming Account**: An account (wallet address) used to escrow the tokens being streamed. This account is under the sole custody/ownership of the TSP smart contract.
 3. **Manager**: A person or organization creating and managing a Streaming Account and its Token Streams.
 4. **Contributor**: Any person or organization contributing tokens to a Streaming Account.
 5. **Beneficiary**: A person or organization receiving tokens from a Token Stream.
 6. **Stream Terms**: A set of terms and an amount of tokens, expressed as a rate over time, that should be streamed to a beneficiary from the Streaming Account.
 7. **Token Stream**: An account maintained by the TSP, which maintains the state of a stream in near-real-time based on the terms encoded, along with the vested and unvested amounts on behalf of a beneficiary. &#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ## **State Machine**
 
 A token stream is a finite-state-machine (FSM) with the following states and transitions:&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th width="156">Current State</th><th width="194">Input</th><th width="129">Next State</th><th>Output</th></tr></thead><tbody><tr><td>Current State</td><td>Input</td><td>Next State</td><td>Output</td></tr><tr><td>Scheduled</td><td>Pause CTA</td><td>Paused</td><td>Stops the token from streaming to the beneficiary. This is reversible.</td></tr><tr><td>Scheduled</td><td>Planned time arrived</td><td>Running</td><td>Starts streaming tokens from the streaming account to the beneficiary.</td></tr><tr><td>Running</td><td>Treasurer or Beneficiary manually stops the stream</td><td>Paused</td><td>The stream is paused, and tokens stop flowing to the beneficiary.</td></tr><tr><td>Running</td><td>Treasury ran out of money</td><td>Paused</td><td>Since there are no token to stream, the stream is stopped, and the beneficiary does not get any more tokens. This is reversible if the streaming account is reloaded.</td></tr><tr><td>Paused</td><td>Treasury reloaded with money</td><td>Running</td><td>Resumes streaming tokens from the streaming account to the beneficiary.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="156">Current State</th><th width="194">Input</th><th width="129">Next State</th><th>Output</th></tr></thead><tbody><tr><td>Current State</td><td>Input</td><td>Next State</td><td>Output</td></tr><tr><td>Scheduled</td><td>Pause CTA</td><td>Paused</td><td>Stops the token from streaming to the beneficiary. This is reversible.</td></tr><tr><td>Scheduled</td><td>Planned time arrived</td><td>Running</td><td>Starts streaming tokens from the streaming account to the beneficiary.</td></tr><tr><td>Running</td><td>Manager or Beneficiary manually stops the stream</td><td>Paused</td><td>The stream is paused, and tokens stop flowing to the beneficiary.</td></tr><tr><td>Running</td><td>Streaming Account ran out of tokens</td><td>Paused</td><td>Since there are no token to stream, the stream is stopped, and the beneficiary does not get any more tokens. This is reversible if the streaming account is reloaded.</td></tr><tr><td>Paused</td><td>Streaming Account reloaded with tokens</td><td>Running</td><td>Resumes streaming tokens from the streaming account to the beneficiary.</td></tr></tbody></table>
 
-The token stream can be closed unilaterally and without consensus by the treasurer or the beneficiary. Closing a stream will result in all the vested amounts being distributed to the beneficiary, and the unvested amounts and any rent returned to the streaming account.
+The token stream can be closed unilaterally and without consensus by the manager or the beneficiary. Closing a stream will result in all the vested amounts being distributed to the beneficiary, and the unvested amounts and any rent returned to the streaming account.
 
 ## **Related Works**
 
@@ -196,23 +196,23 @@ To support this use case with the Token Streaming Contract, we would need to:
 1. Allow the token stream to be configured with an **auto\_pause\_in\_seconds** parameter on creation, such that he/she can set this value to something like 8 hours, assuming the factory shifts are at most that long.
 2. Allow the beneficiary to **ResumeStream** to signal the contract that he/she is indeed “on the clock” and, therefore, should be earning tokens from the stream.
 3. Allow the beneficiary to **PauseStream** to signal the contract that he/she is “off the clock” and, therefore, should NOT be earning tokens from the stream.&#x20;
-   1. This API should also allow the manager/treasurer invocation for overrides in case a worker forgets to clock out or clock in.
+   1. This API should also allow the manager invocation for overrides in case a worker forgets to clock out or clock in.
 
 The biggest challenge with these conditional on/off-clock triggers is the timekeeping shenanigans calculating the escrow\_vested\_amount, and the formula to calculate this field already accounts for this.
 
-#### The Rogue Manager/Treasurer
+#### The Rogue Manager
 
 **Problem**: Consider the following case.
 
 1. A new streaming account is set up by John with one beneficiary, Alice
 2. John adds a stream guaranteeing Alice a pay rate of $1,000/month
 3. John then talks to contributors Bob and Jane to fund Alice’s operation through the streaming account.&#x20;
-4. Bob and Jane like Alice’s project and agree to fund the treasury with $1,000,000. Knowing Alice can only take $1,000/month, they feel they are giving the project long-term stability.
+4. Bob and Jane like Alice’s project and agree to fund the streaming account with $1,000,000. Knowing Alice can only take $1,000/month, they feel they are giving the project long-term stability.
 5. Now John goes rogue and secretly decides to add his accomplice Pepe as another beneficiary to the streaming account without asking Bob and Jane.
 6. John sets up Pepe with a rate of $999,000 per minute.
 7. The results next morning are catastrophic:
    1. John is kaput, nowhere to be found.&#x20;
-   2. Alice wakes up to an empty Treasury, and her project is toast.
+   2. Alice wakes up to an empty streaming account, and her project is toast.
    3. Bob and Jane lost $1,000,000 and have no project to back up.
 8. This is a classic rug pull.
 
