@@ -2,7 +2,7 @@
 description: Tokenomics for $MEAN
 ---
 
-# 🪙 MEAN Token
+# 🔴 MEAN Token
 
 ## What is the $MEAN token?
 
@@ -15,12 +15,12 @@ Additional details about the deployed token parameters are below:&#x20;
 * **Symbol**: $MEAN
 * **Type**: Solana SPL Token
 * **Total Supply**: 210,000,000&#x20;
-* **TGE**: Dec 24th 2021
+* **TGE**: Dec 24th, 2021
 * **Purpose**: Governance
 
 ## Allocations & Distributions
 
-![](broken-reference)
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>MEAN Token Allocations and Distributions</p></figcaption></figure>
 
 ### **Community & Rewards (70%)**&#x20;
 
@@ -68,7 +68,7 @@ Use of Funds:
 
 Here's an overview of the benefits for MEAN token holders that go well beyond Voting Power on the DAO's improvement proposals.
 
-![](broken-reference)
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Mean Power
 
