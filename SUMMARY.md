@@ -6,6 +6,9 @@
 
 * [💰 Personal Banking](defi-applications/personal-banking.md)
 * [🍉 Business Treasury](defi-applications/business-treasury.md)
+* [🎯 Guides](defi-applications/guides/README.md)
+  * [Page 1](defi-applications/guides/page-1.md)
+  * [Page 2](defi-applications/guides/page-2.md)
 
 ## DeFi Infrastructure
 
