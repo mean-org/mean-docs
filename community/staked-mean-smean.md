@@ -12,7 +12,9 @@ When you stake MEAN, you receive sMEAN in return. sMEAN represents a claim on ME
 
 sMEAN is an SPL token that is movable and tradable, making MEAN staking a fully liquid staking solution with 100% capital efficiency while maintaining your governance rights and benefits as a MEAN token holder.&#x20;
 
-The amount of sMEAN you receive when stake MEAN is calculated based on the price difference between sMEAN and MEAN. The price of sMEAN is determined by the total MEAN in the pool over and above the amount staked. This price will grow as more emissions and fee revenue are deposited into the staking vault.
+The amount of sMEAN you receive when stake MEAN is calculated based on the price difference between sMEAN and MEAN. The price of sMEAN is determined by the total MEAN in the pool over and above the amount staked. This price will grow as more emissions and fee revenue are deposited into the staking vault.&#x20;
+
+The greater your sMEAN holdings, the greater your Mean Voting Power; with that, your say in MeanDAO's governance.
 
 ## Claiming staking rewards
 

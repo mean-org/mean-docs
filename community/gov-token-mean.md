@@ -62,65 +62,27 @@ Use of Funds:
 4. **Development (20%) →** We have an extensive roadmap and need additional help with product development resources. We must fund the devs to let them focus on building without stress for 12-18 months.&#x20;
 5. **Partnerships (10%) →** Getting listed in CEXes and penning strategic partnerships.
 
-## Liquidity & Utility
+## Using MEAN
 
-### Token Holders
-
-Here's an overview of the benefits for MEAN token holders that go well beyond Voting Power on the DAO's improvement proposals.
-
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Mean Power
-
-Mean Power represents the amount of MEAN a user holds in their account address and throughout different protocols in Solana. The greater your Mean Power, the greater your say is in protocol governance decisions.
-
-### Staking
-
-Mean staking rewards include emission incentives plus a share of the protocol revenues, and can be boosted using locking periods.&#x20;
-
-#### How to stake MEAN?
-
-When you stake MEAN you receive sMEAN in return. sMEAN represents a claim on MEAN staked in the staking vault. sMEAN is an SPL token and is movable, and tradable, making MEAN staking a fully liquid staking solution.&#x20;
-
-The amount of sMEAN you receive when stake MEAN is calculated based on the price difference between sMEAN and MEAN. The price of sMEAN is determined by the total MEAN in the pool over and above the amount that has been staked. This price will grow as more emissions and fee revenue are deposited into the staking vault.
-
-#### Claiming staking rewards
-
-MEAN Staking is a liquid form of staking, lide Lido, or Marinade. When you stake mean and receive unlocked sMEAN, you do not need to 'claim' your rewards as they will be distributed to you when you unstake. On top of getting back the MEAN you staked, you will also receive a share of the fees and emissions added to the staking vault (as extra MEAN). The longer you leave your MEAN staked, the more MEAN you will make.
-
-#### Locking my MEAN Stake
-
-In an upcoming release of the MEAN staking program, the DAO plans to offer locking periods you can use to boost your rewards. Staking MEAN will then involve locking your tokens for a predetermined amount of time in the Mean Protocol.&#x20;
-
-MEAN holders lock their MEAN for two reasons, to boost their Mean Power or to boost their share of the protocol’s dividends. There are both short and long locking time-frames from 7 days to 4 years to choose from. The longer a user locks their MEAN tokens, the larger the boost they receive in rewards and Mean Power. While your tokens are locked, they cannot be unlocked or transferred by users. Please be mindful of this and plan accordingly to navigate market conditions.&#x20;
-
-### Distributions
-
-If you stake and lock your MEAN for 30 days or more, you become eligible to Mean Protocol dividends that are paid in MEAN and distributed automatically every Wednesday.
-
-The protocol distributes 40% of the revenues allocated to the repurchase program directly to MEAN stakers in the form of dividends. The distribution is relative to how many MEAN tokens each user has staked as a percentage of the entire MEAN stake. The larger your percentage the larger your dividend allocation.&#x20;
-
-A snapshot is taken every Sunday to calculate how the week’s distribution will be shared. Revenue is then distributed the following Wednesday via the rewards page.
-
-To ensure the long-term health of the Mean DAO and the tokenomics of the MEAN governance token, we have in place from day one a MEAN Repurchase Program. The program provides further alignment and upwards price pressure of the MEAN token by creating a closed feeding cycle between revenues and MEAN token holders.&#x20;
+Here's an overview of some of the things MEAN holders can do with their tokens.&#x20;
 
 
 
-{% embed url="https://whimsical.com/dao-revenue-distribution-TDrfvQks2egDTrCYzPLbsG" %}
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+Note that most of these protocols are permissionless, and neither MeanDAO nor its members have control over them. Please exercise caution when interacting with other smart contracts. This is not an endorsement of any of these programs or teams, and it's here to serve for informational purposes only.&#x20;
 
 ## FAQs
 
 ### How can I get MEAN tokens?
 
 * Buy it using USD/EUR directly on [MeanFi](http://app.meanfi.com/buy) using the deposit function.
-* Buy it at an exchange:
+* Buy it or trade it at an exchange:
   * On MeanFi: [https://app.meanfi.com/exchange?from=USDC\&to=MEAN](https://app.meanfi.com/exchange?from=USDC\&to=MEAN)
   * On Gate.io: [https://www.gate.io/trade/MEAN\_USDT](https://www.gate.io/trade/MEAN\_USDT)&#x20;
-  * On MEXC: [https://www.mexc.com/exchange/MEAN\_USDT](https://www.mexc.com/exchange/MEAN\_USDT)
-* Earn it by participating in one of the [incentive programs](broken-reference) of the DAO.
-* Get as part of your refund fees for activities performed on MeanFi.&#x20;
+  * On Bitmart: [https://www.bitmart.com/trade/en?symbol=MEAN\_USDT](https://www.bitmart.com/trade/en?symbol=MEAN\_USDT)&#x20;
 * Exchange it with other people (P2P) directly.
 
 ### What can I do with MEAN?
 
-Vote on the future of the Mean DAO operations and Mean Protocol roadmap through Mean Improvement Proposals (MIPs) 👉 See [Voting](broken-reference). Beyond voting on the Mean DAO, you should explore the [token utility page](broken-reference) for details on how to maximize the use of your MEAN tokens.&#x20;
+Trade ir and stake it to earn voting power and take part of governance on the future of the MeanDAO.&#x20;
