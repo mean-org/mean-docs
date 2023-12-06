@@ -2,7 +2,7 @@
 description: Tokenomics for $MEAN
 ---
 
-# 🔴 MEAN Token
+# 🔴 Gov Token (MEAN)
 
 ## What is the $MEAN token?
 
@@ -20,7 +20,7 @@ Additional details about the deployed token parameters are below:&#x20;
 
 ## Allocations & Distributions
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>MEAN Token Allocations and Distributions</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>MEAN Token Allocations and Distributions</p></figcaption></figure>
 
 ### **Community & Rewards (70%)**&#x20;
 
@@ -68,7 +68,7 @@ Use of Funds:
 
 Here's an overview of the benefits for MEAN token holders that go well beyond Voting Power on the DAO's improvement proposals.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Mean Power
 

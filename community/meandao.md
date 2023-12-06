@@ -4,11 +4,13 @@ description: The DAO organizing Mean Finance's open protocols and community
 
 # 🫂 MeanDAO
 
-## Genesys
+## DAO Genesis
 
 The Mean Finance Ecosystem formed MeanDAO on Dec 24th, 2021, with the objective of supporting the public goods protocols developed by the core team, namely the Token Streamer (aka Payment Streaming protocol) and the Solar Shield (aka Mean Multisig).
 
 The core team relegated control of those protocols' parameters and revenue drivers to the DAO Governance and re-stated their alignment with the overall Mean Finance Mission.&#x20;
+
+## One Metric
 
 As a fully Decentralized Autonomous Organization with membership across the world and with products exclusively in the Solana Ecosystem, the DAO further focused its mission on a single metric:
 
@@ -42,3 +44,17 @@ Time is limited, and we vow not to waste ours on things that do not have a high 
 
 **MeanDAO Metric**: Onboard and grow business operational payments token volume in Solana DeFi.
 {% endhint %}
+
+## Founding Team
+
+‌MeanDAO was founded by five long-term software entrepreneurs, cryptocurrency investors, and friends. They were Michel, Eydel, Yamel, Yansel, and Maylin. Joined by an enthusiastic community, we ventured into the unknown to build together and share ownership in the belief that meaningful value can be created when an ecosystem collaborates to build vs compete.&#x20;
+
+As of Nov 2023, the MeanDAO is made of people from all corners of the world, and we are made of 12k+ MEAN token holders, over 1k sMEAN stakers and governance signers, and 54 active members who have submitted proposals directly on-chain.
+
+## Known Investors
+
+As a DAO, ownership is established by our token holders; and we have been fortunate to have the support of world-class investors and advisors, led by SoftBank, BigBrainHoldings, Gate.io, and DeFiance Capital, and others that will go down in history as the troubled ones, such as Three Arrows Capital and Alameda Research.&#x20;
+
+Read our private round announcement [HERE](https://medium.com/mean-dao/mean-dao-brings-world-class-investors-onboard-to-revolutionize-the-banking-sector-and-build-the-c8bd4b7ed89b).
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
