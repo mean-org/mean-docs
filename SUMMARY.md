@@ -2,11 +2,23 @@
 
 * [👋 Welcome](README.md)
 
-## products
+## DeFi Applications
 
-* [📦 DeFi Applications](products/page-1.md)
-* [⚙ DeFi Infrastructure](products/defi-infrastructure.md)
-* [🧱 DeFi Protocols](products/defi-protocols.md)
+* [💰 Personal Banking](defi-applications/personal-banking.md)
+* [🍉 Business Treasury](defi-applications/business-treasury.md)
+
+## DeFi Infrastructure
+
+* [🧱 DeBaaS APIs](defi-infrastructure/decentralized-banking-as-a-service-baas.md)
+* [💧 Liquidity Aggregation](defi-infrastructure/liquidity-aggregation.md)
+* [🟩 Custody Aggregation](defi-infrastructure/custody-aggregation.md)
+* [💱 Ramps Aggregation](defi-infrastructure/ramps-aggregation.md)
+* [🤝 Lending Aggregation](defi-infrastructure/lending-aggregation.md)
+
+## DeFi Protocols
+
+* [📦 Token Streamer](defi-protocols/token-streamer-token-vesting-solana.md)
+* [🔐 Solar Shield](defi-protocols/solar-shield-solana-multisig.md)
 
 ## Community
 
@@ -14,7 +26,3 @@
 * [✅ Governance & Voting](community/governance-and-voting.md)
 * [🔴 Gov Token (MEAN)](community/gov-token-mean.md)
 * [🟡 Staked MEAN (sMEAN)](community/staked-mean-smean.md)
-
-***
-
-* [Page 2](page-2.md)
