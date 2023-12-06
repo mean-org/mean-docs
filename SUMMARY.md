@@ -9,7 +9,7 @@
 ## Community
 
 * [Mean DAO](community/mean-dao.md)
-* [☑ Governance](community/governance.md)
+* [☑ Governance & Voting](community/governance-and-voting.md)
 * [🔴 Gov Token (MEAN)](community/gov-token-mean.md)
 * [🟠 Staked MEAN (sMEAN)](community/staked-mean-smean.md)
 
