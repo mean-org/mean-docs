@@ -10,3 +10,4 @@
 
 * [Mean DAO](community/mean-dao.md)
 * [☑ Governance](community/governance.md)
+* [🪙 MEAN Token](community/mean-token.md)
