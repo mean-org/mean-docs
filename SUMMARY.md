@@ -1,10 +1,10 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [👋 Welcome](README.md)
 
 ## products
 
-* [📦 DeFi Applications](products/defi-applications.md)
+* [📦 DeFi Applications](products/page-1.md)
 * [⚙ DeFi Infrastructure](products/defi-infrastructure.md)
 * [🧱 DeFi Protocols](products/defi-protocols.md)
 
@@ -13,7 +13,7 @@
 * [🫂 MeanDAO](community/meandao.md)
 * [✅ Governance & Voting](community/governance-and-voting.md)
 * [🔴 Gov Token (MEAN)](community/gov-token-mean.md)
-* [🟠 Staked MEAN (sMEAN)](community/staked-mean-smean.md)
+* [🟡 Staked MEAN (sMEAN)](community/staked-mean-smean.md)
 
 ***
 

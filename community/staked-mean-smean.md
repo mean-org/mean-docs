@@ -2,7 +2,7 @@
 description: How to stake MEAN and leverage sMEAN tokens
 ---
 
-# 🟠 Staked MEAN (sMEAN)
+# 🟡 Staked MEAN (sMEAN)
 
 $MEAN token holders can increase their governance power and distribution allocations by staking their tokens into Stakes MEAN (sMEAN) tokens. sMEAN staking rewards include emission incentives and a share of the protocol revenues.&#x20;
 

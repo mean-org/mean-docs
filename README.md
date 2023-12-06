@@ -2,7 +2,7 @@
 description: Welcome to the Mean Finance Ecosystem official docs
 ---
 
-# Welcome
+# 👋 Welcome
 
 Mean Finance is a financial ecosystem of products, platforms, and people coming together around a common goal:
 
