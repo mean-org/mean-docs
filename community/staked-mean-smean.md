@@ -31,15 +31,3 @@ MEAN holders are incentivized to lock their MEAN for two primary benefits: to bo
 If you stake and lock your MEAN for 30 days or more, you become eligible for revenue distributions paid in MEAN and distributed automatically every Wednesday from the community treasury.
 
 The protocol distributes 40% of the revenues allocated to the repurchase program directly to MEAN stakers in the form of dividends. The distribution is relative to how many MEAN tokens each user has staked as a percentage of the entire MEAN stake. The larger your percentage, the more significant your distribution allocation.
-
-## Repurchase Program&#x20;
-
-To ensure the long-term health of the MeanDAO and the tokenomics of the MEAN governance token, we have a Repurchase Program in place.&#x20;
-
-The program provides further alignment and upward price pressure on the MEAN token by creating a closed feeding cycle between revenues and MEAN token holders.&#x20;
-
-
-
-{% embed url="https://whimsical.com/dao-revenue-distribution-TDrfvQks2egDTrCYzPLbsG" %}
-
-## FAQs
