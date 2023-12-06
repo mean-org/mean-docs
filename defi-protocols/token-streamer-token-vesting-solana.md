@@ -24,15 +24,15 @@ The reference implementation for the TSP is made in Solana Blockchain due to its
 
 The general use of the TSP goes as follows:
 
-1. A user creates a **Token Stream** by calling the **TSP**. We’ll refer to this user as the **issuer** (aka treasurer).&#x20;
+1. A user creates a **Token Stream** by calling the **TSP**. We’ll refer to this user as the **manager** (aka treasurer).&#x20;
 2. The recipient of the Token Stream is referred to as the **beneficiary**.
 3. The Token Stream is set up with specific conditions such as vesting schedule, rate, cliff, start time, and beneficiary, among other setup options.
 4. One or more **contributors** can fund the Token Stream with tokens (SPL Tokens).
 5. Once the Token Stream starts, the beneficiary can withdraw tokens from it based on its current solvency.
 6. The amount of tokens available for withdrawal is updated in near-real-time (at every block height, or \~400ms in Solana). That is:
    * &#x20;`rate * (current_block_height - starting_block_height)`
-7. The Token Stream terms can be updated at any time and require the signatures of both the issuer and the beneficiary to commit to the update.
-8. The Token Stream can be closed unilaterally and without consensus by either the issuer or the beneficiary.&#x20;
+7. The Token Stream terms can be updated at any time and require the signatures of both the manager and the beneficiary to commit to the update.
+8. The Token Stream can be closed unilaterally and without consensus by either the manager or the beneficiary.&#x20;
 9. In the event of closure of the Token Stream, the TSP distributes any unvested funds back to the original contributors and all vested funds to the beneficiary automatically.
 
 ## Motivation
@@ -147,25 +147,25 @@ This stands in contrast with **Open Streaming Accounts**, like those for Payroll
 
 The payment streaming program specification defines how the different players, actors, and components interact with each other.
 
-The basic premise of a token streaming smart contract is that once it gets executed between an issuer **(**sender) and a beneficiary (recipient), its terms are enforced by code instead of humans. The issuer cannot run away with the tokens owed to the beneficiary, and the beneficiary cannot take the tokens he/she has not yet earned.
+The basic premise of a token streaming smart contract is that once it gets executed between a manager **(**sender) and a beneficiary (recipient), its terms are enforced by code instead of humans. The manager cannot run away with the tokens owed to the beneficiary, and the beneficiary cannot take the tokens he/she has not yet earned.
 
 In order to stream tokens from A→B at a specific rate/flow over time, the following participants are defined.
 
 1. **Token Streaming Program (TSP)**: A smart contract or program deployed to a permissionless blockchain that uses this protocol as a reference implementation.&#x20;
 2. **Streaming Account**: An account (wallet address) used to escrow the money being streamed. This account is under the sole custody/ownership of the TSP smart contract.
-3. **Issuer**: A person or organization creating a Streaming Account.
+3. **Manager**: A person or organization creating and managing a Streaming Account and its Token Streams.
 4. **Contributor**: Any person or organization contributing tokens to a Streaming Account.
 5. **Beneficiary**: A person or organization receiving tokens from a Token Stream.
 6. **Stream Terms**: A set of terms and an amount of tokens, expressed as a rate over time, that should be streamed to a beneficiary from the Streaming Account.
-7. **Token Stream**: An account maintained by the TSP, which maintains in near-time the state of a stream based on the terms encoded, along with the vested and unvested amounts on behalf of a beneficiary. &#x20;
+7. **Token Stream**: An account maintained by the TSP, which maintains the state of a stream in near-real-time based on the terms encoded, along with the vested and unvested amounts on behalf of a beneficiary. &#x20;
 
-![](broken-reference)
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## **State Machine**
 
 A token stream is a finite-state-machine (FSM) with the following states and transitions:&#x20;
 
-![Mean Money Stream States](broken-reference)
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 <table data-header-hidden><thead><tr><th width="156">Current State</th><th width="194">Input</th><th width="129">Next State</th><th>Output</th></tr></thead><tbody><tr><td>Current State</td><td>Input</td><td>Next State</td><td>Output</td></tr><tr><td>Scheduled</td><td>Pause CTA</td><td>Paused</td><td>Stops the token from streaming to the beneficiary. This is reversible.</td></tr><tr><td>Scheduled</td><td>Planned time arrived</td><td>Running</td><td>Starts streaming tokens from the streaming account to the beneficiary.</td></tr><tr><td>Running</td><td>Treasurer or Beneficiary manually stops the stream</td><td>Paused</td><td>The stream is paused, and tokens stop flowing to the beneficiary.</td></tr><tr><td>Running</td><td>Treasury ran out of money</td><td>Paused</td><td>Since there are no token to stream, the stream is stopped, and the beneficiary does not get any more tokens. This is reversible if the streaming account is reloaded.</td></tr><tr><td>Paused</td><td>Treasury reloaded with money</td><td>Running</td><td>Resumes streaming tokens from the streaming account to the beneficiary.</td></tr></tbody></table>
 
@@ -181,46 +181,39 @@ Sablier Finance ([https://sablier.finance/](https://sablier.finance/)) is an imp
 
 Circle’s CEO comments on streaming payments: [https://www.pymnts.com/news/payment-methods/2021/circle-ceo-programmable-money-ushers-in-era-of-continuous-streaming-payments/ ](https://www.pymnts.com/news/payment-methods/2021/circle-ceo-programmable-money-ushers-in-era-of-continuous-streaming-payments/)
 
-## **Considerations**
+## **Other Considerations**
 
 #### **Conditional Streams**
 
-Hourly employees usually require to get paid by the exact number of hours or minutes they work. The process works like this:
+Hourly employees get paid by the exact number of hours or minutes they work. The process works like this:
 
 1. Employer and employee agree on an hourly rate (i.e., $20/h)
-2. The employer gives the employee a way to clock in and clock out, like a physical clocking card at a factory.
+2. The employer gives the employee a way to clock in and out, like a physical clocking card at a factory.
 3. At the end of the month, the employer inspects the hours reported by the employee and pays him accordingly.
 
-To support this use case with the Streaming Contract, we would need to:
+To support this use case with the Token Streaming Contract, we would need to:
 
-1. Allow the treasurer to configure an **auto\_pause\_in\_seconds** parameter on creation, such that he/she can set this value to something like 8 hours, assuming the factory shifts are at most that long.
-2. Allow the beneficiary to **ResumeStream** to signal the contract that he/she is indeed “on the clock”, and therefore should be making money.
-3. Allow the beneficiary to **PauseStream** to signal the contract that he/she is “off the clock”, and therefore should NOT be making money.&#x20;
-   1. This API should also be allowed for the treasurer, to allow for overrides, in case a worker forgets to clock out or clock in.
+1. Allow the token stream to be configured with an **auto\_pause\_in\_seconds** parameter on creation, such that he/she can set this value to something like 8 hours, assuming the factory shifts are at most that long.
+2. Allow the beneficiary to **ResumeStream** to signal the contract that he/she is indeed “on the clock” and, therefore, should be earning tokens from the stream.
+3. Allow the beneficiary to **PauseStream** to signal the contract that he/she is “off the clock” and, therefore, should NOT be earning tokens from the stream.&#x20;
+   1. This API should also allow the manager/treasurer invocation for overrides in case a worker forgets to clock out or clock in.
 
-The biggest challenge with these conditional on/off clock triggers is the timekeeping shenanigans calculating the escrow\_vested\_amount, and the formula to calculate this field already accounts for this.\
+The biggest challenge with these conditional on/off-clock triggers is the timekeeping shenanigans calculating the escrow\_vested\_amount, and the formula to calculate this field already accounts for this.
 
-
-#### The Rogue Treasurer
+#### The Rogue Manager/Treasurer
 
 **Problem**: Consider the following case.
 
-1. A treasury is setup by treasurer John with one beneficiary Alice
-2. John adds a stream guaranteeing Alice and pay rate of 1000/month
-3. John then talks to contributors Bob and Jane to fund Alice’s operation through the treasury. Bob and Jane like Alice’s project and agree to fund the treasury with $1,000,000, knowing that Alice can only take $1,000/month, they feel they are giving the project long-term stability.
-4. Now John goes rogue and secretly decides to add his accomplice Pepe as another beneficiary to the treasury, without asking Bob and Jane.
-5. John sets up Pepe with a rate of $999,000 per minute.
-6. The results next morning are catastrophic:
+1. A new streaming account is set up by John with one beneficiary, Alice
+2. John adds a stream guaranteeing Alice a pay rate of $1,000/month
+3. John then talks to contributors Bob and Jane to fund Alice’s operation through the streaming account.&#x20;
+4. Bob and Jane like Alice’s project and agree to fund the treasury with $1,000,000. Knowing Alice can only take $1,000/month, they feel they are giving the project long-term stability.
+5. Now John goes rogue and secretly decides to add his accomplice Pepe as another beneficiary to the streaming account without asking Bob and Jane.
+6. John sets up Pepe with a rate of $999,000 per minute.
+7. The results next morning are catastrophic:
    1. John is kaput, nowhere to be found.&#x20;
    2. Alice wakes up to an empty Treasury, and her project is toast.
-   3. Bob and Jane lost $1,000,000 and have no project to backup.
-7. This is a classic rug pull.
+   3. Bob and Jane lost $1,000,000 and have no project to back up.
+8. This is a classic rug pull.
 
-**Solution**: Always force the treasurer to be a multi-sign wallet account address, and require a super-majority vote to add beneficiaries to a treasury.
-
-1. Multi-sig treasury account OR treasurer = (no less than three addresses)&#x20;
-2.  Super-majority votes required on certain operations (such as adding beneficiaries) `is_streaming = current_block_height >` &#x20;
-
-    &#x20;                  `stream_resumed_block_height`&#x20;
-
-    &#x20;                  `+ auto_pause_in_seconds/1000`
+**Solution**: Contributors should take special care in ensuring the streaming account is managed through a multisig wallet (like [Solar Shield](solar-shield-solana-multisig.md)) and require a super-majority vote to add new Token Streams.
