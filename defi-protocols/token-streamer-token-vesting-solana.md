@@ -2,7 +2,7 @@
 description: An on-chain smart contract for vesting and real-time finance
 ---
 
-# 📦 Token Streamer Whitepaper
+# 〰 Token Streamer Whitepaper
 
 ## Abstract
 
