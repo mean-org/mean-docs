@@ -28,8 +28,8 @@ Let's break that apart back to front.
    * This also means not focusing on TVL, On/Off Ramp and Bridge Volume, # of Users, etc
 4. **Business Operational Payments** = focused on business use cases with lots of volumes, like Payroll, Token Vesting for VCs, Business Loans, etc.
    * This also means not focusing on non-operational volume, like trading volume, P2P volume, remittance volume, etc.
-5. **Onboard and Grow** = focused on bringing new businesses and growing existing ones.
-   * This also means not focusing on retail and individual users.
+5. **Onboard and Grow** = focused on bringing volume from newly onboarded businesses and growing volume from existing ones.
+   * This also means not focusing on retail/individual users' volume.
 
 ## High Signal, Low Noise
 
