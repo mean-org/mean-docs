@@ -17,8 +17,8 @@
 
 ## DeFi Protocols
 
-* [📦 Token Streaming Whitepaper](defi-protocols/token-streamer-token-vesting-solana.md)
-* [🔐 Solar Shield](defi-protocols/solar-shield-solana-multisig.md)
+* [📦 Token Streamer Whitepaper](defi-protocols/token-streamer-token-vesting-solana.md)
+* [🔐 Solar Shield Whitepaper](defi-protocols/solar-shield-solana-multisig.md)
 * [👨💻 Developers Guide](defi-protocols/developers-guide.md)
 
 ## Community

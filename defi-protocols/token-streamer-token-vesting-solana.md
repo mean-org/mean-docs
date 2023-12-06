@@ -1,8 +1,8 @@
 ---
-description: A Solana-based smart contract for vesting and real-time finance
+description: An on-chain smart contract for vesting and real-time finance
 ---
 
-# 📦 Token Streaming
+# 📦 Token Streamer Whitepaper
 
 ## Abstract
 
