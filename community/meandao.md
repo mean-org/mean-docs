@@ -33,7 +33,7 @@ Let's break that apart back to front.
 
 ## High Signal, Low Noise
 
-The MeanDAO was formed during one of the worst periods of the crypto markets and was directly affected by some of its investors, who turned out to be bad actors. We suffered when Three Arrows Capital went under, then when Defiance went under, and then one last time when Alameda/FTX went under. But we persevered and kept on building because our mission is worth keeping alive for the world because what we are doing matters on a human scale.&#x20;
+The MeanDAO was formed during one of the worst periods of the crypto markets and was directly affected by some of its investors, who turned out to be bad actors. Our dear MEAN token and our  Treasury suffered when Three Arrows Capital went under, then when Defiance went under, and then one last time when Alameda/FTX went under. But we persevered and kept on building because our mission is worth keeping alive for the world because what we are doing matters on a human scale.&#x20;
 
 Because we survived the school of hard knocks, we are unwavering in maintaining hyper-focus on the overall Mean Finance mission and filtering every idea and every move through the lens of that mission and our one metric. An idea should not be considered if it doesn't improve one of those two unless the proposal is to change our guiding principles and metric.&#x20;
 
