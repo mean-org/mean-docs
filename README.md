@@ -10,10 +10,8 @@ Mean Finance is a financial ecosystem of products, platforms, and people coming 
 **To accelerate the world’s transition to decentralized finance ecosystems to bring economic equality and opportunity for individuals and organizations everywhere.**
 {% endhint %}
 
-&#x20;for capturing and documenting technical knowledge — from product docs, to internal knowledge bases and APIs.
+&#x20;add stuff here
 
+## Discover Mean Finance
 
-
-Discover Mean Finance
-
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>Ecosystem </td><td></td><td></td></tr><tr><td>Official Links &#x26; Resources</td><td></td><td></td></tr><tr><td>Community</td><td>//Mean DAO Stuff</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center">Ecosystem </td><td align="center"></td><td></td></tr><tr><td align="center">Official Links &#x26; Resources</td><td align="center"></td><td></td></tr><tr><td align="center"><strong>MeanDAO</strong></td><td align="center">meet the community</td><td><a href=".gitbook/assets/Mean DAO.svg">Mean DAO.svg</a></td></tr></tbody></table>
