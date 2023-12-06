@@ -4,7 +4,9 @@
 
 ## products
 
-* [Page 1](products/page-1.md)
+* [📦 DeFi Applications](products/defi-applications.md)
+* [⚙ DeFi Infrastructure](products/defi-infrastructure.md)
+* [🧱 DeFi Protocols](products/defi-protocols.md)
 
 ## Community
 

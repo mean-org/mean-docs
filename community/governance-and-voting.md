@@ -4,7 +4,7 @@ description: >-
   protocols
 ---
 
-# ☑ Governance
+# ✅ Governance & Voting
 
 Governance is the collective and decentralized decision-making process on specific rules and directions for MeanDAO. Given we are a protocol DAO that makes products, the governance proposals are geared toward code maintenance, roadmap, and future releases of the protocols and products we support with our Treasury resources.
 
