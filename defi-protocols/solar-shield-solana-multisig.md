@@ -91,7 +91,7 @@ So, going back to owning your own keys… what’s next… well there’s this t
 
 Not only is this solution shitty because it is cumbersome to set up and pretty much nails it as the WORST onboarding experience of any product ever made by mankind, but in reality, it only removes the digital risks to your assets and moves that risk to the physical world.&#x20;
 
-,Good luck if you share that SentrySafe hunk of metal with your significant other who’ll no longer be so tomorrow. Fuck! Run, run, move your shit to a new hardware device, and do steps 1-7 again, and then remove all your tokens out of the old wallet into the new one before he/she makes a gangster move to wipe you out and… wait… it’s all gone!&#x20;
+Good luck if you share that SentrySafe hunk of metal with your significant other who’ll no longer be so tomorrow. Fuck! Run, run, move your shit to a new hardware device, and do steps 1-7 again, and then remove all your tokens out of the old wallet into the new one before he/she makes a gangster move to wipe you out and… wait… it’s all gone!&#x20;
 
 You just got socially engineered out of your money by an angry ex. But how is that possible?! You had what was supposed to be the safest way to guard your crypto assets.
 
