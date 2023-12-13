@@ -1,6 +1,6 @@
 ---
-description: DeFi Personal and Business Applications
+description: DeFi Personal Banking and Digital Asset Management
 ---
 
-# 💰 Personal Banking
+# 💰 DeFi Personal Banking
 

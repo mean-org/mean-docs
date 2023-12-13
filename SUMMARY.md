@@ -9,7 +9,7 @@
   * [Login / Connect Wallet](mean-finance/guides/login-connect-wallet.md)
   * [Your Accounts](mean-finance/guides/your-accounts.md)
   * [Creating a Safe](mean-finance/guides/creating-a-safe.md)
-  * [Exchanges / Swaps](mean-finance/guides/exchanges-swaps.md)
+  * [Exchanges / Swaps](mean-finance/guides/page.md)
   * [Deposits & Withdrawals](mean-finance/guides/deposits-and-withdrawals.md)
   * [Token Streams](mean-finance/guides/token-streams.md)
 
