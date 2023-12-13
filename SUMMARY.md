@@ -6,8 +6,10 @@
 * [💰 DeFi Personal Banking](mean-finance/defi-personal-banking.md)
 * [🍉 DeFi Business Treasury](mean-finance/defi-business-treasury.md)
 * [🎯 Guides](mean-finance/guides/README.md)
-  * [Page 1](mean-finance/guides/page-1.md)
-  * [Page 2](mean-finance/guides/page-2.md)
+  * [Login / Connect Wallet](mean-finance/guides/login-connect-wallet.md)
+  * [Your Accounts](mean-finance/guides/your-accounts.md)
+  * [Creating a Safe](mean-finance/guides/creating-a-safe.md)
+  * [Page](mean-finance/guides/page.md)
 
 ## DeFi Protocols
 
