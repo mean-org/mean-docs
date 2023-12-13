@@ -3,9 +3,10 @@
 ## Mean Finance
 
 * [👋 Welcome](README.md)
-* [💰 DeFi Personal Banking](mean-finance/defi-personal-banking.md)
-* [🍉 DeFi Business Treasury](mean-finance/defi-business-treasury.md)
-* [🎯 Guides](mean-finance/guides/README.md)
+* [🟥 DeFi Intents](mean-finance/defi-intents.md)
+* [🟨 DeFi Personal Banking](mean-finance/defi-personal-banking.md)
+* [🟦 DeFi Business Treasury](mean-finance/defi-business-treasury.md)
+* [🟩 Guides](mean-finance/guides/README.md)
   * [Login / Connect Wallet](mean-finance/guides/login-connect-wallet.md)
   * [Your Accounts](mean-finance/guides/your-accounts.md)
   * [Creating a Safe](mean-finance/guides/creating-a-safe.md)
