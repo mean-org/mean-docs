@@ -1,22 +1,13 @@
 # Table of contents
 
+## Mean Finance
+
 * [👋 Welcome](README.md)
-
-## DeFi Applications
-
-* [💰 Personal Banking](defi-applications/personal-banking.md)
-* [🍉 Business Treasury](defi-applications/business-treasury.md)
-* [🎯 Guides](defi-applications/guides/README.md)
-  * [Page 1](defi-applications/guides/page-1.md)
-  * [Page 2](defi-applications/guides/page-2.md)
-
-## DeFi Infrastructure
-
-* [🧱 DeBaaS APIs](defi-infrastructure/decentralized-banking-as-a-service-baas.md)
-* [💧 Liquidity Aggregation](defi-infrastructure/liquidity-aggregation.md)
-* [🟩 Custody Aggregation](defi-infrastructure/custody-aggregation.md)
-* [💱 Ramps Aggregation](defi-infrastructure/ramps-aggregation.md)
-* [🤝 Lending Aggregation](defi-infrastructure/lending-aggregation.md)
+* [💰 DeFi Personal Banking](mean-finance/defi-personal-banking.md)
+* [🍉 DeFi Business Treasury](mean-finance/defi-business-treasury.md)
+* [🎯 Guides](mean-finance/guides/README.md)
+  * [Page 1](mean-finance/guides/page-1.md)
+  * [Page 2](mean-finance/guides/page-2.md)
 
 ## DeFi Protocols
 
